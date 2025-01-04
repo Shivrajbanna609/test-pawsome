@@ -1,0 +1,161 @@
+.admin-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .pet-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .pet-form input,
+  .pet-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .pet-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pet-form button:hover {
+    background: #45a049;
+  }
+  
+  .pet-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .pet-table th,
+  .pet-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .pet-table th {
+    background: #f4f4f4;
+  }
+  
+  .delete-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background: #c0392b;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .success {
+    color: green;
+    font-weight: bold;
+  }
+  .admin-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .pet-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .pet-form input,
+  .pet-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .pet-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pet-form button:hover {
+    background: #45a049;
+  }
+  
+  .pet-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .pet-table th,
+  .pet-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .pet-table th {
+    background: #f4f4f4;
+  }
+  
+  .delete-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background: #c0392b;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .success {
+    color: green;
+    font-weight: bold;
+  }
+    
