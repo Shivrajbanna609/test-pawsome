@@ -1,0 +1,221 @@
+.pet-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .filters-section {
+    background-color: #FFE6D9;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .filters-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    align-items: end;
+  }
+  
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .filter-group label {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .filter-group select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .filter-button {
+    padding: 0.75rem 2rem;
+    background-color: #FFB4A2;
+    border: none;
+    border-radius: 0.5rem;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .filter-button:hover {
+    background-color: #FF9B85;
+  }
+  
+  .selected-filters {
+    margin-bottom: 2rem;
+  }
+  
+  .selected-filters h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .filter-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .filter-tag {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #FFB4A2;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+  }
+  
+  .filter-tag button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    line-height: 1;
+    padding: 0;
+  }
+  
+  .pets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+  }
+  
+  .pet-card {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pet-image {
+    position: relative;
+    aspect-ratio: 1;
+  }
+  
+  .pet-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .favorite-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  
+  .heart-icon {
+    width: 24px;
+    height: 24px;
+    color: white;
+    stroke-width: 2px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  }
+  
+  .favorite-button.active .heart-icon {
+    fill: white;
+  }
+  
+  .pet-info {
+    padding: 1rem;
+    background-color: white;
+  }
+  
+  .pet-info h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+  }
+  
+  .pet-info p {
+    margin: 0;
+    color: #666;
+    font-size: 0.875rem;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .pagination-numbers {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .pagination-number {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+  }
+  
+  .pagination-number.active {
+    background-color: #FFB4A2;
+    font-weight: 500;
+  }
+  
+  .pagination-arrow {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .filters-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .pets-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .filter-tags {
+      flex-direction: column;
+    }
+  
+    .pagination-numbers button:not(.active):not(:first-child):not(:last-child) {
+      display: none;
+    }
+  }
+  
+  

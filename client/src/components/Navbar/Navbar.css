@@ -1,0 +1,143 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 140px 0 140px; 
+}
+
+nav img {
+    height: 58px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding-top: 20px; 
+}
+
+nav ul li {
+    padding: 0 20px; 
+    font-size: 24px;
+}
+
+nav ul li:first-child {
+    padding-left: 0; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.80);
+    font-family: "Roboto", sans-serif;
+}
+
+nav .logs {
+    display: flex;
+    align-items: center;
+    padding-right: 140px; 
+}
+
+nav .logs .black {
+    color: black;
+}
+
+nav i {
+    padding: 0 10px;
+    font-size: 30px;
+}
+
+nav .divider {
+    height: 30px;
+    width: 2px;
+    background-color: rgba(0, 0, 0, 0.80);
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 20px 80px; 
+    }
+
+    nav ul li {
+        padding: 0 15px; 
+        font-size: 20px; 
+    }
+
+    nav .logs {
+        padding-right: 80px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px; 
+    }
+
+    nav img {
+        height: 40px;
+    }
+
+    nav ul {
+        padding: 20px 0; 
+    }
+
+    nav ul li {
+        padding: 10px 0;
+        font-size: 18px; 
+    }
+
+    nav .logs {
+        padding: 0;
+    }
+}
+
+/* User initials */
+.user-info {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .user-initial {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .hover-box {
+    position: absolute;
+    top: 40px;  /* Adjust the position to make the hover box appear below the initials */
+    right: 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    z-index: 10;
+  }
+  
+  .hover-box ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hover-box li {
+    padding: 8px 0px;
+    text-align: center; 
+    font-size: 16px;
+  }
+  
+  .hover-box li:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+ 
