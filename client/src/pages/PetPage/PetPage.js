@@ -38,7 +38,6 @@ export default function PetPage() {
       <Navbar />
       <div className="pet-page">
         <main className="main-content">
-          {/* Pets Grid */}
           <section className="pets-grid">
             {pets.map((pet) => (
               <div key={pet._id} className="pet-card">
@@ -60,7 +59,6 @@ export default function PetPage() {
             ))}
           </section>
 
-          {/* Pagination */}
           <div className="pagination">
             <button className="pagination-arrow">&lt;</button>
             <div className="pagination-numbers">
@@ -82,3 +80,4 @@ export default function PetPage() {
     </>
   );
 }
+

@@ -6,6 +6,7 @@ import connectDB from "./config/mongodb.js"
 import authRouter from "./routes/authRoutes.js"
 import userRouter from "./routes/userRoutes.js"
 import petRouter from './routes/petRoutes.js';
+import upload from "./middleware/multer.js"
 
 
 const app = express()
@@ -18,6 +19,10 @@ const allowedOrigins = ['http://localhost:3000']
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({origin: allowedOrigins, credentials: true}))  // for sending cookies  in response
+app.use((req, res, next) => {
+    req.upload = upload;
+    next();
+  });
 
 //Api endpoints
 app.get('/', (req, res) => res.send("API working"));
